@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "333560900363",
+    "project_id": "sprint3-hallodog",
+    "storage_bucket": "sprint3-hallodog.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:333560900363:android:0917fc807d226146f3d00e",
+        "android_client_info": {
+          "package_name": "com.example.sprint3_hallodog"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "333560900363-k3h1q0pf6lb20avv67ia0aam907fi06p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRE2vumjRd6G1NGFIhhIHVD6RnLVcl4ok"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "333560900363-k3h1q0pf6lb20avv67ia0aam907fi06p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
