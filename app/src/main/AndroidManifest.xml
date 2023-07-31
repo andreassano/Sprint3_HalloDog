@@ -12,8 +12,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Sprint3_HalloDog"
         tools:targetApi="s">
-        <activity android:name=".MainActivity"/>
-        <activity android:name=".ui.auth.AuthActivity"/>
+        <activity
+            android:name=".ui.homebutton.konsultasi.KonsultasiActivity"
+            android:exported="false" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".ui.auth.AuthActivity" />
         <activity
             android:name=".ui.splashscreen.SplashScreenActivity"
             android:exported="true">

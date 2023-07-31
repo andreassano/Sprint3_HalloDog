@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
+import androidx.compose.ui.layout.Layout
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.sprint3_hallodog.R
@@ -12,7 +14,7 @@ import com.example.sprint3_hallodog.model.dummy.ProfileMenuModel
 import com.example.sprint3_hallodog.ui.profile.ProfileMenuAdapter
 
 
-class ProfileLainnyaFragment : Fragment() {
+class ProfileLainnyaFragment : Fragment(), ProfileMenuAdapter.ItemAdapterCallback{
 
     private var menuArrayList : ArrayList<ProfileMenuModel> = ArrayList()
 
@@ -21,7 +23,7 @@ class ProfileLainnyaFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_profile_lainnya, container, false)
+        return inflater.inflate(R.layout.fragment_profile_akun, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -30,8 +32,8 @@ class ProfileLainnyaFragment : Fragment() {
 
         initDataDummy()
 
-        val adapter = ProfileMenuAdapter(menuArrayList, this)
-        val layoutManager : RecyclerView.LayoutManager = LinearLayoutManager(activity)
+        var adapter = ProfileMenuAdapter(menuArrayList, this)
+        var layoutManager : RecyclerView.LayoutManager = LinearLayoutManager(activity)
         view.findViewById<RecyclerView>(R.id.rvItemProfile).layoutManager = layoutManager
         view.findViewById<RecyclerView>(R.id.rvItemProfile).adapter = adapter
 
@@ -39,11 +41,12 @@ class ProfileLainnyaFragment : Fragment() {
 
     fun initDataDummy() {
         menuArrayList = ArrayList()
-        menuArrayList.add(ProfileMenuModel("Edit Profile"))
-        menuArrayList.add(ProfileMenuModel("Alamat Saya"))
-        menuArrayList.add(ProfileMenuModel("Keamanan"))
+        menuArrayList.add(ProfileMenuModel("Histori Transaksi"))
     }
 
+    override fun onClick(v: View, data: ProfileMenuModel) {
+        Toast.makeText(context, data.title, Toast.LENGTH_SHORT).show()
+    }
 
 
 }

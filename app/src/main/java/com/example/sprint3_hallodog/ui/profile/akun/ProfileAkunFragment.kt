@@ -30,8 +30,8 @@ class ProfileAkunFragment : Fragment(), ProfileMenuAdapter.ItemAdapterCallback {
 
         initDataDummy()
 
-        val adapter = ProfileMenuAdapter(menuArrayList, this)
-        val layoutManager : RecyclerView.LayoutManager = LinearLayoutManager(activity)
+        var adapter = ProfileMenuAdapter(menuArrayList, this)
+        var layoutManager : RecyclerView.LayoutManager = LinearLayoutManager(activity)
         view.findViewById<RecyclerView>(R.id.rvItemProfile).layoutManager = layoutManager
         view.findViewById<RecyclerView>(R.id.rvItemProfile).adapter = adapter
 
@@ -42,10 +42,12 @@ class ProfileAkunFragment : Fragment(), ProfileMenuAdapter.ItemAdapterCallback {
         menuArrayList.add(ProfileMenuModel("Edit Profile"))
         menuArrayList.add(ProfileMenuModel("Alamat Saya"))
         menuArrayList.add(ProfileMenuModel("Keamanan"))
+        menuArrayList.add(ProfileMenuModel("Keluar"))
     }
 
     override fun onClick(v: View, data: ProfileMenuModel) {
         Toast.makeText(context, data.title, Toast.LENGTH_SHORT).show()
     }
+
 
 }
