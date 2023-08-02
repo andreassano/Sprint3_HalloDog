@@ -1,35 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
-    
+
     <androidx.cardview.widget.CardView
         android:id="@+id/cvTips"
         android:layout_margin="12dp"
-        android:layout_width="match_parent"
-        android:layout_height="160dp"
-        app:cardCornerRadius="20dp">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        android:backgroundTint="#3D9CF2">
 
         <ImageView
             android:id="@+id/imgTips"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:src="@drawable/banner_card_tips"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/imgtips1"
             android:scaleType="centerCrop"
-            />
-
-        <TextView
-            android:id="@+id/tvTitleTips"
-            android:layout_margin="8dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Tingkatkan kualitas hidup hewan kesayangan Kamu mulai sekarang! Perawatan hewan peliharaan lebih mudah dan nyaman dengan fitur konsultasi online! Dengan Book Appointment"
-            style="@style/Textview.PoppinsSemiBold12spFFFF"
-            android:layout_gravity="center"
             />
 
     </androidx.cardview.widget.CardView>
 
-</LinearLayout>
+    <TextView
+        android:id="@+id/tvTitleTips"
+        style="@style/Textview.PoppinsSemiBold14sp091F33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_toRightOf="@id/cvTips"
+        android:text="Sayangi dan perlakukan peliharaan layaknya manusia" />
+
+    <LinearLayout
+        android:layout_marginTop="24dp"
+        android:layout_below="@id/tvTitleTips"
+        android:layout_toRightOf="@id/cvTips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/imgDate"
+            android:layout_below="@id/tvTitleTips"
+            android:layout_toRightOf="@id/cvTips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/calender"
+            />
+
+        <TextView
+            android:layout_marginTop="1dp"
+            android:id="@+id/tvTanggal"
+            style="@style/Textview.PoppinsMedium12sp636363"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="8dp"
+            android:text="01 Agustus, 2023" />
+    </LinearLayout>
+
+</RelativeLayout>

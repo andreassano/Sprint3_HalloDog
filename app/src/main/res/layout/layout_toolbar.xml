@@ -23,7 +23,7 @@
 
         <TextView
             android:id="@+id/tvToolbar"
-            style="@style/Textview.PoppinsMedium20sp20262E"
+            style="@style/Textview.PoppinsMedium20sp091F33"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"

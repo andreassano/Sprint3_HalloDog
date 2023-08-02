@@ -23,12 +23,13 @@
     <TextView
         android:id="@+id/tvOpening"
         android:layout_marginTop="20dp"
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="@string/hello_blank_fragment"
-        android:layout_gravity="center"
+        android:text="@string/Title.SignUp"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
         style="@style/Textview.PoppinsMedium24sp20262E"/>
-
+    
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

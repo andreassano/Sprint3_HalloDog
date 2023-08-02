@@ -6,17 +6,29 @@
     <string name="slogan_name">Take Care Your Pet Everyday</string>
     <!-- TODO: Remove or change this placeholder text -->
 
-    <string name="hello_blank_fragment">Buat akun HaloDog kamu</string>
+    <string name="Title.SignUp">Buat akun HaloDog kamu!</string>
 
     <style name="Textview" />
 
-    <style name="Textview.PoppinsMedium20sp20262E">
+    <style name="Textview.PoppinsMedium20sp091F33">
         <item name="android:fontFamily">@font/poppins_medium</item>
-        <item name="android:textColor">#20262E</item>
+        <item name="android:textColor">#091F33</item>
         <item name="android:textSize">20sp</item>
     </style>
 
-    <style name="Textview.PoppinsReguler16spF0F0F0">
+    <style name="Textview.PoppinsMedium32spC5C5C5">
+        <item name="android:fontFamily">@font/poppins_semi_bold</item>
+        <item name="android:textColor">#C5C5C5</item>
+        <item name="android:textSize">24dp</item>
+    </style>
+
+    <style name="Textview.PoppinsSemiBold20sp091F33">
+        <item name="android:fontFamily">@font/poppins_semi_bold</item>
+        <item name="android:textColor">#091F33</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="Textview.PoppinsReguler16spC5C5C5">
         <item name="android:fontFamily">@font/poppins_regular</item>
         <item name="android:textColor">#C5C5C5</item>
         <item name="android:textSize">16sp</item>
@@ -35,9 +47,22 @@
         <item name="textAllCaps">false</item>
     </style>
 
+    <style name="Textview.PoppinsSemiBold16spFFFF">
+        <item name="android:fontFamily">@font/poppins_semi_bold</item>
+        <item name="android:textColor">#FFFF</item>
+        <item name="android:textSize">16sp</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
     <style name="Textview.PoppinsMedium24sp20262E">
         <item name="android:fontFamily">@font/poppins_medium</item>
         <item name="android:textColor">#20262E</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="Textview.PoppinsSemiBold24sp20262E">
+        <item name="android:fontFamily">@font/poppins_semi_bold</item>
+        <item name="android:textColor">#091F33</item>
         <item name="android:textSize">24sp</item>
     </style>
 
@@ -47,9 +72,9 @@
         <item name="android:textSize">18sp</item>
     </style>
 
-    <style name="Textview.PoppinsMedium18sp20262E">
+    <style name="Textview.PoppinsMedium18sp091F33">
         <item name="android:fontFamily">@font/poppins_medium</item>
-        <item name="android:textColor">#20262E</item>
+        <item name="android:textColor">#091F33</item>
         <item name="android:textSize">18sp</item>
     </style>
 
@@ -58,6 +83,14 @@
         <item name="android:textColor">#20262E</item>
         <item name="android:textSize">18sp</item>
     </style>
+
+    <style name="Textview.PoppinsReguler18sp636363">
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:textColor">#636363</item>
+        <item name="android:textSize">18sp</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
 
     <style name="Textview.PoppinsReguler14sp20262E">
         <item name="android:fontFamily">@font/poppins_regular</item>
@@ -86,6 +119,25 @@
         <item name="textAllCaps">false</item>
     </style>
 
+    <style name="Textview.PoppinsSemiBold14sp091F33">
+        <item name="android:fontFamily">@font/poppins_semi_bold</item>
+        <item name="android:textColor">#091F33</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Textview.PoppinsMedium14sp636363">
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textColor">#636363</item>
+        <item name="android:textSize">14sp</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="Textview.PoppinsReguler14spC5C5C5">
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:textColor">#C5C5C5</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
     <style name="Textview.PoppinsBold12sp20262E">
         <item name="android:fontFamily">@font/poppins_bold</item>
         <item name="android:textColor">#20262E</item>
@@ -96,6 +148,13 @@
     <style name="Textview.PoppinsSemiBold12sp20262E">
         <item name="android:fontFamily">@font/poppins_semi_bold</item>
         <item name="android:textColor">#20262E</item>
+        <item name="android:textSize">12sp</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="Textview.PoppinsMedium12sp636363">
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textColor">#636363</item>
         <item name="android:textSize">12sp</item>
         <item name="textAllCaps">false</item>
     </style>
@@ -143,5 +202,50 @@
     <string name="title_profile">Profile</string>
     <string name="title_home">Home</string>
     <string name="title_keranjang">Keranjang</string>
+    <string name="title_activity_home_button">HomeButtonActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="lorem_ipsum">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
+        volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
+        dui nec risus. Maecenas non sodales nisi, vel dictum dolor. Class aptent taciti sociosqu ad
+        litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse blandit eleifend
+        diam, vel rutrum tellus vulputate quis. Aliquam eget libero aliquet, imperdiet nisl a,
+        ornare ex. Sed rhoncus est ut libero porta lobortis. Fusce in dictum tellus.\n\n
+        Suspendisse interdum ornare ante. Aliquam nec cursus lorem. Morbi id magna felis. Vivamus
+        egestas, est a condimentum egestas, turpis nisl iaculis ipsum, in dictum tellus dolor sed
+        neque. Morbi tellus erat, dapibus ut sem a, iaculis tincidunt dui. Interdum et malesuada
+        fames ac ante ipsum primis in faucibus. Curabitur et eros porttitor, ultricies urna vitae,
+        molestie nibh. Phasellus at commodo eros, non aliquet metus. Sed maximus nisl nec dolor
+        bibendum, vel congue leo egestas.\n\n
+        Sed interdum tortor nibh, in sagittis risus mollis quis. Curabitur mi odio, condimentum sit
+        amet auctor at, mollis non turpis. Nullam pretium libero vestibulum, finibus orci vel,
+        molestie quam. Fusce blandit tincidunt nulla, quis sollicitudin libero facilisis et. Integer
+        interdum nunc ligula, et fermentum metus hendrerit id. Vestibulum lectus felis, dictum at
+        lacinia sit amet, tristique id quam. Cras eu consequat dui. Suspendisse sodales nunc ligula,
+        in lobortis sem porta sed. Integer id ultrices magna, in luctus elit. Sed a pellentesque
+        est.\n\n
+        Aenean nunc velit, lacinia sed dolor sed, ultrices viverra nulla. Etiam a venenatis nibh.
+        Morbi laoreet, tortor sed facilisis varius, nibh orci rhoncus nulla, id elementum leo dui
+        non lorem. Nam mollis ipsum quis auctor varius. Quisque elementum eu libero sed commodo. In
+        eros nisl, imperdiet vel imperdiet et, scelerisque a mauris. Pellentesque varius ex nunc,
+        quis imperdiet eros placerat ac. Duis finibus orci et est auctor tincidunt. Sed non viverra
+        ipsum. Nunc quis augue egestas, cursus lorem at, molestie sem. Morbi a consectetur ipsum, a
+        placerat diam. Etiam vulputate dignissim convallis. Integer faucibus mauris sit amet finibus
+        convallis.\n\n
+        Phasellus in aliquet mi. Pellentesque habitant morbi tristique senectus et netus et
+        malesuada fames ac turpis egestas. In volutpat arcu ut felis sagittis, in finibus massa
+        gravida. Pellentesque id tellus orci. Integer dictum, lorem sed efficitur ullamcorper,
+        libero justo consectetur ipsum, in mollis nisl ex sed nisl. Donec maximus ullamcorper
+        sodales. Praesent bibendum rhoncus tellus nec feugiat. In a ornare nulla. Donec rhoncus
+        libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
+        vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
+    </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

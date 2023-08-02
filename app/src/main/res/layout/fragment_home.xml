@@ -34,7 +34,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imgProfile"
             app:layout_constraintTop_toTopOf="parent"
-            style="@style/Textview.PoppinsMedium18sp20262E"
+            style="@style/Textview.PoppinsSemiBold24sp20262E"
             />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -47,7 +47,7 @@
         android:text="Layanan"
         android:paddingTop="12dp"
         android:paddingStart="12dp"
-        style="@style/Textview.PoppinsMedium20sp20262E"
+        style="@style/Textview.PoppinsSemiBold16sp20262E"
         />
 
     <TextView
@@ -59,12 +59,85 @@
         style="@style/Textview.PoppinsReguler14sp636363"
         />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvMenu"
-        android:layout_width="wrap_content"
+    <HorizontalScrollView
+        android:id="@+id/hsButtonHorizontal"
+        android:layout_width="match_parent"
         android:layout_height="140dp"
-        tools:listitem="@layout/item_home_horizontal"
-        tools:itemCount="1"/>
+        android:layout_gravity="center_horizontal"
+        android:background="#FFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnKonsultasi"
+                android:layout_margin="12dp"
+                android:layout_width="92dp"
+                android:layout_height="120dp"
+                android:backgroundTint="#FFFF"
+                app:icon="@drawable/konsultasi"
+                app:iconGravity="top"
+                app:iconSize="40dp"
+                android:text="Konsultasi"
+                android:paddingVertical="20dp"
+                android:paddingHorizontal="4dp"
+                style="@style/Textview.PoppinsSemiBold12sp20262E"
+                app:cornerRadius="20dp"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnPetFood"
+                android:layout_margin="12dp"
+                android:layout_width="92dp"
+                android:layout_height="120dp"
+                android:backgroundTint="#FFFF"
+                app:icon="@drawable/food"
+                app:iconGravity="top"
+                app:iconSize="40dp"
+                android:text="Pet Food"
+                android:paddingVertical="20dp"
+                android:paddingHorizontal="4dp"
+                style="@style/Textview.PoppinsSemiBold12sp20262E"
+                app:cornerRadius="20dp"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnVitamin"
+                android:layout_margin="12dp"
+                android:layout_width="92dp"
+                android:layout_height="120dp"
+                android:backgroundTint="#FFFF"
+                app:icon="@drawable/vitamins"
+                app:iconGravity="top"
+                app:iconSize="40dp"
+                android:text="Vitamin"
+                android:paddingVertical="20dp"
+                android:paddingHorizontal="4dp"
+                style="@style/Textview.PoppinsSemiBold12sp20262E"
+                app:cornerRadius="20dp"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnPetShop"
+                android:layout_margin="12dp"
+                android:layout_width="92dp"
+                android:layout_height="120dp"
+                android:backgroundTint="#FFFF"
+                app:icon="@drawable/vitamins"
+                app:iconGravity="top"
+                app:iconSize="40dp"
+                android:text="Pet Shop"
+                android:paddingVertical="20dp"
+                android:paddingHorizontal="4dp"
+                style="@style/Textview.PoppinsSemiBold12sp20262E"
+                app:cornerRadius="20dp"
+                />
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
 
     <TextView
         android:background="#FFF"
@@ -74,7 +147,7 @@
         android:text="Tips Peliharaan"
         android:paddingTop="12dp"
         android:paddingStart="12dp"
-        style="@style/Textview.PoppinsMedium20sp20262E"
+        style="@style/Textview.PoppinsSemiBold16sp20262E"
         />
 
     <TextView

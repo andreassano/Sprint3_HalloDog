@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/cvDokter"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="205dp"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="20dp"
+    android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/dr2"
+            />
+
+        <TextView
+            android:id="@+id/tvNama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="74dp"
+            android:text="Dr. Audenza"
+            style="@style/Textview.PoppinsSemiBold16sp20262E"
+            />
+
+        <TextView
+            android:id="@+id/tvSpecialist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="46dp"
+            android:layout_marginStart="74dp"
+            android:text="Food Specialist"
+            style="@style/Textview.PoppinsReguler14spC5C5C5"
+            />
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/calender"
+            android:layout_marginTop="96dp"
+            android:layout_marginStart="16dp"
+            />
+
+        <TextView
+            android:id="@+id/tvTanggal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="96dp"
+            android:layout_marginStart="44dp"
+            android:text="Senin"
+            style="@style/Textview.PoppinsMedium14sp636363"
+            />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="96dp"
+            android:layout_marginStart="170dp"
+            android:src="@drawable/clock"
+            />
+
+        <TextView
+            android:id="@+id/tvJam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="98dp"
+            android:layout_marginStart="200dp"
+            android:text="11:00 - 13:00"
+            style="@style/Textview.PoppinsMedium14sp636363"
+            />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="296dp"
+            android:layout_height="60dp"
+            android:backgroundTint="#3D9CF2"
+            android:text="Book Sekarang"
+            style="@style/Textview.PoppinsSemiBold16spFFFF"
+            android:layout_gravity="center|bottom"
+            android:layout_marginBottom="12dp"
+            app:cornerRadius="40dp"
+            />
+
+    </androidx.cardview.widget.CardView>

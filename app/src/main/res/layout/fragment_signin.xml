@@ -79,7 +79,7 @@
             android:layout_below="@id/editTextPassword"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="ciee.. Lupa Password"
+            android:hint="Lupa Password?"
             android:textSize="12sp"
             android:fontFamily="@font/poppins_semi_bold"
             android:textColorHint="#3D9CF2"
@@ -130,7 +130,6 @@
                 />
 
         </LinearLayout>
-
 
     </RelativeLayout>
 

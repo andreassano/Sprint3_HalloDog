@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/homebutton_nav"
+    app:startDestination="@id/konsultasiFragment">
+
+    <fragment
+        android:id="@+id/foodFragment"
+        android:name="com.example.sprint3_hallodog.ui.home.homebutton.food.FoodFragment"
+        android:label="fragment_food"
+        tools:layout="@layout/fragment_food" >
+        <action
+            android:id="@+id/action_foodFragment_to_detailFoodFragment"
+            app:destination="@id/detailFoodFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/konsultasiFragment"
+        android:name="com.example.sprint3_hallodog.ui.home.homebutton.konsultasi.KonsultasiFragment"
+        android:label="fragment_konsultasi"
+        tools:layout="@layout/fragment_konsultasi" />
+    <fragment
+        android:id="@+id/vitaminFragment"
+        android:name="com.example.sprint3_hallodog.ui.home.homebutton.vitamin.VitaminFragment"
+        android:label="fragment_vitamin"
+        tools:layout="@layout/fragment_vitamin" />
+    <fragment
+        android:id="@+id/shopFragment"
+        android:name="com.example.sprint3_hallodog.ui.home.homebutton.shop.ShopFragment"
+        android:label="fragment_shop"
+        tools:layout="@layout/fragment_shop" />
+    <fragment
+        android:id="@+id/detailFoodFragment"
+        android:name="com.example.sprint3_hallodog.ui.home.homebutton.food.DetailFoodFragment"
+        android:label="fragment_detail_food"
+        tools:layout="@layout/fragment_detail_food" />
+</navigation>

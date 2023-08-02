@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -11,7 +13,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Sprint3_HalloDog"
+        android:usesCleartextTraffic="true"
         tools:targetApi="s">
+        <activity
+            android:name=".ui.home.detail.DetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.home.homebutton.HomeButtonActivity"
+            android:exported="false"
+            android:label="@string/title_activity_home_button"
+            android:theme="@style/Theme.Sprint3_HalloDog" />
         <activity
             android:name=".ui.homebutton.konsultasi.KonsultasiActivity"
             android:exported="false" />

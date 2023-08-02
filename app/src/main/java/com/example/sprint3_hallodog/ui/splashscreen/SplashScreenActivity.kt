@@ -33,6 +33,7 @@ class SplashScreenActivity : AppCompatActivity() {
 
         Handler(Looper.getMainLooper()).postDelayed({
             startActivity(Intent(this, AuthActivity::class.java))
+            finish()
         }, 2000)
 
         //Animasi

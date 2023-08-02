@@ -9,6 +9,7 @@ import androidx.navigation.NavOptions
 import androidx.navigation.Navigation
 import androidx.navigation.findNavController
 import com.example.sprint3_hallodog.R
+import com.example.sprint3_hallodog.ui.auth.lupapass.ForgotpassFragment
 import com.example.sprint3_hallodog.ui.auth.signup.SignupFragment
 
 class AuthActivity : AppCompatActivity() {
@@ -32,6 +33,16 @@ class AuthActivity : AppCompatActivity() {
                 .replace(R.id.fragmentContainerView, signUpFragment)
                 .commit()
         }
+        if (pageRequest == 3) {
+            toolbarForgotPass()
+            // Memanggil fragment "Sign Up"
+            val forgotPass = ForgotpassFragment()
+
+            // Mengganti tampilan fragment pada container di activity_auth.xml
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.fragmentContainerView, forgotPass)
+                .commit()
+        }
 
     }
 
@@ -42,6 +53,14 @@ class AuthActivity : AppCompatActivity() {
             }
             val textView = toolbar.findViewById<TextView>(R.id.tvToolbar)
             textView.text = "Daftar"
+        }
+        private fun toolbarForgotPass() {
+            toolbar.navigationIcon = resources.getDrawable(R.drawable.baseline_arrow_back, null)
+            toolbar.setNavigationOnClickListener {
+                onBackPressedDispatcher.onBackPressed()
+            }
+            val textView = toolbar.findViewById<TextView>(R.id.tvToolbar)
+            textView.text = "Lupa Password"
         }
 
 }

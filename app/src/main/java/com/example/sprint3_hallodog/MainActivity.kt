@@ -10,6 +10,7 @@ import androidx.navigation.ui.NavigationUI
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.sprint3_hallodog.databinding.ActivityMainBinding
+import com.example.sprint3_hallodog.ui.profile.ProfileFragment
 
 class MainActivity : AppCompatActivity() {
 
